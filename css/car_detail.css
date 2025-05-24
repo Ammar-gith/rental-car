@@ -1,0 +1,497 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "lato", sans-serif;
+}
+
+
+.main_container{
+  
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+
+}
+
+/*----------------------nav css start-------------------------------------------------------*/
+
+
+.nav_div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    border-top: 5px solid red;
+    /* justify-content: space-around; */
+    /* color: #28b16d; */
+    /* position: fixed; */
+    /* background-color: #f5f5f5 ; */
+    /* box-shadow: 1px 1px 9px  rgba(80, 77, 77, 0.9); */
+    /* border-radius: 3px; */
+    /* box-shadow: 0px 0px 8px gray; */
+
+
+
+    /* border: 1px solid green; */
+
+}
+
+.logo_img {
+    width: 15%;
+    height: 70px;
+    margin-left: 30px;
+    /* border: 1px solid blue; */
+    background-image: url("../assets/images/logo.png");
+    background-position: center;
+    background-size: 150px 60px;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+
+}
+
+
+nav {
+    width: 65%;
+    height: 65px;
+    margin-right: 8%;
+    /* align-items:center ; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+/* .nav_div .nav-btn{
+    margin-left: 130px;
+} */
+
+
+
+.nav_div nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+
+
+
+
+    /* text-decoration: none; */
+}
+
+/* .nav-div nav ul li{
+    float: left;
+    height: 40px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    /* border: 1px solid green; *
+    margin-left: 3%;
+} */
+
+
+
+.nav_div nav ul li a {
+    text-decoration: none;
+    color: #010103;
+    padding: 0px 15px;
+    font-weight: 500;
+    /* border: 1px solid; */
+
+}
+
+
+.nav_div nav ul li a:hover {
+    color: red;
+
+}
+
+.nav_div nav ul li a.active {
+    color: red;
+
+
+}
+
+
+/* .nav-btn a i{
+    padding:  10px 27px;
+    margin-top: -10px;
+    background: red;;
+    color: white;
+    /* box-shadow: 1px 3px 4px  rgba(6, 129, 6, 0.6); *
+} */
+
+.nav_btn {
+    margin-top: -10px;
+    /* margin-left: ; */
+    padding: 5px 0px;
+    /* background-color: red; */
+    /* background: linear-gradient(to left, red 0%, rgb(194, 58, 24) 100%); */
+
+    /* border-radius: 50px; */
+    /* border: 2px solid red; */
+
+
+}
+
+/*  .nav_btn:hover {
+    background: white;
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to left, red 0%, rgb(194, 58, 24) 100%); 
+
+
+} */
+
+.nav_div nav .nav_btn a {
+    font-weight: 900;
+    font-size: 18px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: red;
+    border: 4px solid red;
+    border-radius: 50px;
+    z-index: 1;
+    position: relative;
+    transition: .3s ease-in-out;
+
+    /* color: whitesmoke; */
+}
+
+
+.nav_div nav .nav_btn a::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0px ;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 50px;
+    
+    background: red;
+    
+    z-index: -1;
+    transition: transform .3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+}
+
+
+.nav_div nav .nav_btn a:hover::before {
+    transform: scaleX(1);
+  
+
+}
+
+
+.nav_div nav .nav_btn a:hover {
+   color: white
+
+
+
+}
+
+
+
+
+
+/*----------------------nav css end-------------------------------------------------------*/
+
+.container {
+    height: 350px;
+    /* padding-top: 50px; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Three columns with equal width */
+    gap: 10px;
+    /* Spacing between cards */
+    background-color: #fff;
+    /* border: 1px solid; */
+}
+
+
+.card {
+    /* text-align: center; */
+    /* width: 100%; */
+    height: 350px;
+    padding: 20px 20px 20px 20px;
+    /* background: linear-gradient(darkgray 0%, white 50%, white 100%); */
+    border-radius: 10px;
+    /* box-shadow: 3px 2px 4px 6px rgba(221, 212, 212, 0.6); */
+    /* transition: .3s ease-in-out; */
+}
+
+.card:hover{
+    /* cursor: pointer; */
+    transform: scale(1.1);
+
+
+}
+
+.container .card img{
+    width: 100%;
+    height: 250px;
+    /* margin: 20px 20px 20px 20px ; */
+    /* background-color: white; */
+
+}
+
+
+
+
+
+
+
+/* <!-------------------------------------footer div start  here---------------------------------------------> */
+
+.footer_div{
+    width: 100%;
+    margin-top: 60px;
+
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(236, 235, 235);
+    padding-top: 50px;
+    /* border: 1px solid red; */
+
+}
+
+
+.car_rental_div{
+    width:30%;
+    height: auto;
+    /* border: 1px solid red; */
+    /* padding-left: 14px; */
+}
+
+
+
+
+.cr_head{
+    width: fit-content;
+    height: auto;
+    padding-left: 100px;
+    /* border: 1px solid; */
+}
+
+.cr_para{
+    padding-top: 30px;
+    width: 95%;
+    color: #817f91;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0px 50px 0;
+    padding-left: 100px;
+    /* border: 1px solid; */
+}
+
+
+.cr_number{
+    width: fit-content;
+    /* border: 1px solid; */
+}
+.cr_number ul li {
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 100px;
+}
+
+.cr_number ul li a{
+    text-decoration: none;
+    /* padding-left: 14px; */
+}
+
+.cr_number ul li a span:hover{
+    color: red;
+    
+}
+
+
+.cr_number span {
+    color: #010103;
+    font-size: 15px;
+    padding-left: -1000px;
+
+}
+
+.cr_number span i{
+    color: #010103;
+    font-size: 15px;
+    padding-right: 20px;
+    /* margin-right: 20px; */
+}
+
+
+.company_div{
+    width: fit-content;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.company_head{
+    margin-bottom: 30px;
+}
+.comnay_head_link{
+    margin-top: 25px;
+
+}
+
+.comnay_head_link a{
+   text-decoration: none;
+   color: #010103;
+   font-weight: 200;
+   /* padding-top: 50px; */
+   /* margin-top: 50px; */
+}
+
+.comnay_head_link a:hover{
+    color: red;
+ }
+
+ .work_time h2{
+    font-size: 15px;
+    font-weight: 200;
+    padding-top: 30px;
+    color: #817591;
+
+ }
+
+ .work_time span{
+    font-size: 15px;
+    color: #010103;
+    font-weight: 200;
+
+ }
+
+
+ .subsription_para{
+      padding-top: 30px;
+    width: 70%;
+    color: #817f91;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0px 50px 0;
+    /* padding-left: 14px; */
+    /* border: 1px solid; */
+
+ }
+
+.input_form input{
+    display: block;
+    text-align: center;
+
+
+    font-family: rubik,Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: whitesmoke;
+    color:#010103;
+    border-radius: 0 0 0 0;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    border-color: transparent;
+    padding: 10px 50px;
+}
+/*
+ width: 65%;
+ height: auto;
+ min-height: 42px;
+ padding: 10px 60px;
+ font-size: 1rem;
+ font-weight: 400;
+ line-height: 1.5;
+ color: #495057;
+ background-color: #ececec;
+ background-clip: padding-box;
+ border: 1px solid #ced4da;
+ box-sizing: border-box; */
+
+
+.input_form input:focus{
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 5px 0px red;
+}
+
+.input_form button{
+    
+    font-family: rubik,Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -.32px;
+    border-radius: 2px;
+    border: 1px solid red;
+    padding: 10px 5px;
+    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+    width: 20%;
+    margin: 10px 0 0;
+    color: #fff;
+    background: linear-gradient(to left, red 0%, rgb(194, 58, 24) 100%);
+    /* border: 1px solid red; */
+    position: relative;
+    z-index: 1;
+    transition:.4s ease-in-out;
+
+
+    
+}
+
+.input_form button::before{
+    content: "";
+    width: 100%;
+    /* height: 200px; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: whitesmoke;
+    /* border: 1px solid whitesmoke; */
+    z-index: -1;
+    transition: transform .4s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+
+
+}
+
+.input_form button:hover::before{
+    transform: scaleX(1);
+
+
+}
+
+
+.input_form button:hover{
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+   
+}
+
+
+
+/* <!-------------------------------------footer div end  here---------------------------------------------> */
